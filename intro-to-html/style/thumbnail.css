@@ -1,0 +1,89 @@
+     .thumbnail {
+        width: 100%;
+        }
+        .duration {
+            font-family: roboto,Arial,sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            position: absolute;
+            bottom:10px;
+            right: 5px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 2px;
+            padding:4px;
+        }
+
+     .video-title {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 12px;
+            line-height: 20px;
+        }
+
+        .channel-logo{
+            width: 36px;
+            margin-top: 10px;
+            border-radius: 50%; 
+            display:  block;
+            margin-right: 0px;
+            
+        }
+
+        .channel-logo-container {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+
+        .video-info {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+      .video-author,
+      .video-stats {
+              display:block;
+              font-size: 12px;
+              margin-top: 2px;
+              color:#606060;
+            }
+    .video-author{
+                margin-bottom: 5px;
+            }
+
+    .video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    }
+
+    .thumbnail-element{
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+    .video-preview-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+    }
+
+    @media (max-width:750px){
+        .video-preview-container{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (min-width:751px) and (max-width:999px){
+        .video-preview-container{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @media (min-width:1000px){
+        .video-preview-container{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    
